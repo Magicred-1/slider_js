@@ -71,7 +71,7 @@ section ul li img {
 section h2 {
     display: none; /* cacher le titre */
 }
-  
+   
 body {
     background: #353333;
 }
@@ -95,7 +95,7 @@ main {
     min-height: 60rem;
 }
 
-  div {
+div {
     margin : 2rem 0 0 0;
     width: 100%;
     padding: 1rem;
