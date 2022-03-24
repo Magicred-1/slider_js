@@ -1,0 +1,123 @@
+/* reset css */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Just+Another+Hand&display=swap');
+html{
+    font-size: 62.5%; 
+/* 16px * 62,5 10.00rem */
+}
+
+body{
+  font: 1.6rem sans-serif;
+  padding: 0;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+}
+
+*{
+    box-sizing: border-box; /* 100px largeur + 10px padding + 1px border */
+}
+
+ul, 
+ol, 
+p,
+button,
+figure, 
+blockquote, h1, h2, h3, address{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    font-style: normal;
+}
+
+button{
+    background: transparent;
+    font-size: inherit;
+    border: 0;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #222;
+}
+header{
+    background-color: #1d1c1c;
+    padding: 2rem;
+    border-bottom: solid .3rem #d38810;
+}
+header h1 {
+    height: 3rem;
+    text-align: center;
+    color: #fff;
+}
+header img{
+    height: 4rem;
+    width: 4rem;
+}
+
+img {
+    display : inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+section ul li img {
+    transition-duration: .25s;
+    border: solid .4rem var(--color-default);
+}
+  
+body {
+    background: #353333;
+}
+main {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 3rem;
+}
+  
+  section ul li img {
+    max-width: 100%;
+    display: none;
+  }
+
+  section ul li img.active {
+    display: block;
+    animation: fade 0.8s;
+    border: 0.1rem solid #000;
+    max-width: 60rem;
+    max-height: 80rem;
+    min-height: 60rem;
+}
+
+  section:nth-child(2) {
+    width: 100%;
+    height: auto;
+    border: 0.06rem solid #000;
+    background: #1d1c1c;
+    box-shadow: 0 0.6rem 0.6rem rgba(0,0,0,0.3);
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+  }
+  section:nth-child(2) h2 {
+    color: #d38810;
+  }
+
+
+  section h2 {
+    font-size: 3rem;
+    margin: 0 0.9rem;
+    cursor: pointer;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
