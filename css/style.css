@@ -69,7 +69,7 @@ section ul li img {
     border: solid .4rem var(--color-default);
 }
 section h2 {
-    display: none;
+    display: none; /* cacher le titre */
 }
   
 body {
