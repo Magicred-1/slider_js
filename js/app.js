@@ -25,12 +25,7 @@ let app =({
     },
     keyPress (e) {
             console.log(e);
-            
-            if(e.keyCode === 37){
-                app.slideBefore();
-            } else if(e.keyCode === 39){
-                app.slideNext();
-            }
+            e.keyCode === 37 ? app.slideBefore() : e.keyCode === 39 ? app.slideNext() : null;
         },
 })
 
